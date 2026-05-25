@@ -53,7 +53,7 @@
       padding: 20px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.2);
       transition: transform 0.3s ease;
-      width: 250px; /* щоб усі були однакові */
+      width: 250px;
     }
 
     .subject-card:hover {
@@ -62,7 +62,7 @@
     }
 
     .subject-card h2 {
-      color: white; /* без жовтого */
+      color: white;
       font-size: 22px;
       margin-bottom: 10px;
     }
@@ -72,30 +72,27 @@
       line-height: 1.5;
     }
 
-    .nav-buttons {
+    nav {
+      background-color: rgba(255, 255, 255, 0.1);
       display: flex;
       justify-content: center;
-      gap: 20px;
-      flex-wrap: wrap;
-      margin-top: 30px;
+      padding: 10px;
+      margin-bottom: 30px;
     }
 
-    .nav-buttons a {
-      background-color: #ffffff;
-      color: #003366;
+    nav a {
+      color: #fff;
       text-decoration: none;
-      padding: 12px 24px;
-      border-radius: 8px;
+      margin: 0 15px;
       font-weight: bold;
-      transition: background-color 0.3s ease, color 0.3s ease;
-      border: 2px solid #ffffff;
-      margin: 10px;
-      display: inline-block;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: 0.3s ease;
     }
 
-    .nav-buttons a:hover {
-      background-color: #f0f0f0;
-      color: #002244;
+    nav a:hover {
+      background-color: #fff;
+      color: #333;
     }
 
     footer {
@@ -107,6 +104,13 @@
   </style>
 </head>
 <body>
+
+  <!-- Навігація -->
+  <nav>
+    <a href="index.html">Про мене</a>
+    <a href="lab1.html">Індивідуальна робота</a>
+    <a href="about.html">Теми</a>
+  </nav>
 
   <div class="container">
     <h1>Теми</h1>
@@ -146,12 +150,6 @@
         <h2>Тема 7</h2>
         <p>Мережа (TCP/IP, Сервер, URL). HTTP. Вебпрограмування. HTML. Форми. CSS. JavaScript</p>
       </div>
-    </div>
-
-    <div class="nav-buttons">
-      <a href="index.html">Про мене</a>
-      <a href="lab1.html">Індивідуальна робота</a>
-      <a href="about.html">Теми</a>
     </div>
   </div>
 
